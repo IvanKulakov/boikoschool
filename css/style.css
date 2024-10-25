@@ -1,0 +1,247 @@
+.main {
+    font-family: "Roboto","Open Sans", sans-serif;
+    background: #ffffff;
+    scroll-behavior: smooth;
+}
+
+
+.wrapper {
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head_nav{
+    padding-bottom: 28px;
+    padding-top: 28px;
+    background-color: #791221;
+}
+.head_nav_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.head_nav_links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head_nav_link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #ffffff;
+}
+.head_nav_button{
+    position: absolute;
+    right: 50px;
+    width: 256px;
+    height: 48px;
+    top: 16px;
+    padding: 10px 32px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #791221;
+    cursor: pointer;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.white_line{
+    height: 3px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.top{
+
+    background: url("../img/cartoon-map-world-with-map-world-it.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    border-bottom: 3px solid #791221;
+    position: relative;
+}
+.top_block{
+    position: relative;
+}
+.h1_top{
+
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: left;
+    color: #ffffff;
+    width: 50%;
+    margin-bottom: 36px;
+}
+.content_top{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    width: 40%;
+    color: #ffffff;
+    margin-bottom: 44px;
+}
+.button_top_box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button_top{
+    color: #ffffff;
+    background: none;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44px;
+    padding: 14px 43px;
+    border: 4px solid #791221;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 70px 0px #BFACD359;
+    margin-bottom: 64px;
+    cursor: pointer;
+}
+.top_messengers_box{
+    display: flex;
+    justify-content: center;
+}
+.top_messengers{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.svg_top{
+    position: absolute;
+    left: calc(50% - 41px);
+    bottom: -43px;
+}
+
+.about{
+    margin-top: 64px;
+    margin-bottom: 20px;
+}
+.about_title{
+    font-family: Roboto;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 62px;
+    color: #791221;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about_top_block{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #791221;
+    border-radius: 30px;
+    padding: 34px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about_top_box{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about_top_box_content{
+    margin-left: 12px;
+}
+.about_top_box_content_text_top{
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff;
+}
+.about_top_box_content_text{
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 290px;
+        width: 100%;
+    }
+}
+@media (min-width: 410px) {
+    .wrapper {
+        max-width: 370px;
+    }
+}
+@media (min-width: 510px) {
+    .wrapper {
+        max-width: 470px;
+    }
+}
+@media (min-width: 610px) {
+    .wrapper {
+        max-width: 570px;
+    }
+}
+@media (min-width: 710px) {
+    .wrapper {
+        max-width: 670px;
+    }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+    .wrapper {
+        max-width: 770px;
+    }
+}
+@media (min-width: 910px) {
+    .wrapper {
+        max-width: 870px;
+    }
+}
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 952px;
+    }
+}
+@media (min-width: 1010px) {
+    .wrapper {
+        max-width: 970px;
+    }
+}
+@media (min-width: 1110px) {
+    .wrapper {
+        max-width: 1070px;
+    }
+}
+@media (min-width: 1210px) {
+    .wrapper {
+        max-width: 1160px;
+    }
+}
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1340px;
+    }
+}
