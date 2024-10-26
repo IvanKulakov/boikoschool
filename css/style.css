@@ -149,6 +149,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 42px;
 }
 .about_top_box{
     box-sizing: border-box;
@@ -174,6 +175,247 @@
     color: #ffffff;
 }
 
+.lesson_type_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.lesson_type_content_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lesson_type_box{
+    padding: 24px 16px;
+    width: 46%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #791221;
+    border-radius: 30px;
+}
+.lesson_type_box_title{
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 26px;
+
+}
+.lesson_type_box_content{
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+.lessons_price{
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.lessons_price_title{
+    padding: 10px 16px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+}
+.lesson_block_coast{
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.lesson_coast{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding: 10px 16px;
+    color: #000000;
+}
+.lesson_type_img{
+    background-color: #791221;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.lesson_type_box_white{
+    padding: 24px 16px;
+    width: 46%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+}
+.lesson_type_box_title_white{
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 26px;
+
+}
+.lesson_type_box_content_white{
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.lessons_price_white{
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.lessons_price_title_white{
+    padding: 10px 16px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #000000;
+}
+.lesson_block_coast_white{
+    border-radius: 30px;
+    background-color: #791221;
+}
+.lesson_coast_white{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding: 10px 16px;
+    color: #ffffff;
+}
+.lesson_type_img_white{
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+.lesson_type_btns{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.teacher_background{
+    padding-top: 75px;
+    padding-bottom: 50px;
+    background-color: #791221;
+}
+.teacher_title{
+    font-family: Open Sans;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 66px;
+}
+.teacher_box{
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 360px;
+    border-radius: 30px;
+    background: #00000033;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+.teacher_photo_box{
+    text-align: center;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+.teacher_photo{
+    width: 100%;
+    border-radius: 22px;
+}
+.teacher_name{
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.teacher_level{
+    overflow: hidden;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #000000;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.teacher_level_mb{
+    margin-bottom: 10px;
+    width: fit-content;
+}
+.teacher_data{
+    margin-top: 12px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+.teachers_block{
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    white-space:nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.teacher_level_data{
+    text-align: justify;
+    height: 80px;
+    white-space: pre-wrap;
+
+}
+
+.teachers_type_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.teachers_type_btn_left{
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
 
 
 
