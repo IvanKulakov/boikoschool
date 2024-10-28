@@ -5,6 +5,7 @@
 }
 
 
+
 .wrapper {
     min-width: 320px;
     width: 100%;
@@ -307,6 +308,26 @@
     flex-direction: row;
     justify-content: center;
 }
+.lesson_type_btn_left{
+    transform: scaleX(-1);
+    transition: opacity .5s;
+    opacity: .5;
+    cursor: pointer;
+
+}
+.lesson_type_btn_left:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+.lesson_type_btn_right{
+    transition: opacity .5s;
+    opacity: .5;
+    cursor: pointer;
+}
+.lesson_type_btn_right:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
 
 .teacher_background{
     padding-top: 75px;
@@ -399,9 +420,27 @@
     margin-top: 40px;
 }
 .teachers_type_btn_left{
-    transform: rotate(180deg);
-    transform-origin: center center;
+    transform: scaleX(-1);
+    margin-right: 10px;
+    transition: opacity .5s;
+    opacity: .5;
+    cursor: pointer;
 }
+.teachers_type_btn_left:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+.teachers_type_btn_right{
+    margin-left: 10px;
+    transition: opacity .5s;
+    opacity: .5;
+    cursor: pointer;
+}
+.teachers_type_btn_right:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+
 
 .about_school_background{
     margin-top: 40px;
@@ -889,6 +928,9 @@
     color: #000000;
 }
 
+.invisible{
+    display: none;
+}
 
 @media (min-width: 320px) {
     .wrapper {
