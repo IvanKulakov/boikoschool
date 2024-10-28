@@ -10,15 +10,18 @@
     width: 100%;
     margin: 0 auto;
 }
-
 .head_nav{
-    padding-bottom: 28px;
-    padding-top: 28px;
+    padding-bottom: 12px;
+    padding-top: 12px;
     background-color: #791221;
+
 }
 .head_nav_block{
     width: 100%;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .head_nav_links{
     width: 50%;
@@ -35,11 +38,6 @@
     text-decoration: none;
 }
 .head_nav_button{
-    position: absolute;
-    right: 50px;
-    width: 256px;
-    height: 48px;
-    top: 16px;
     padding: 10px 32px;
     border-radius: 100px;
     background-color: #ffffff;
@@ -50,6 +48,7 @@
     font-weight: 500;
     line-height: 27px;
 }
+
 .white_line{
     height: 3px;
     width: 100%;
@@ -852,8 +851,43 @@
     text-align: center;
     color: #ffffff;
 }
-
-
+.contact_input_background{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #791221;
+}
+.contact_input_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input_block_contacts{
+    width: 48%;
+}
+.contact_input_content{
+    display: inline-block;
+    width: 48%;
+    padding-right: 100px;
+}
+.contact_input_content_title{
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.contact_input_content_text{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.contact_top_block_button{
+    background-color: #FFFFFF;
+    color: #000000;
+}
 
 
 @media (min-width: 320px) {
@@ -936,7 +970,6 @@
     }
     .head_nav_block{
         display: flex;
-        justify-content: left;
     }
     .h1_top{
         font-size: 46px;
@@ -984,10 +1017,6 @@
     .wrapper {
         max-width: 1160px;
     }
-    .head_nav_block{
-        justify-content: center;
-    }
-
 }
 @media (min-width: 1440px) {
     .wrapper {
