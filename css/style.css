@@ -660,12 +660,10 @@
     margin-bottom: 40px;
 }
 .input_block{
-    width: 60%;
     margin: 0 auto;
 }
 .input_block_top{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .input_style{
@@ -684,9 +682,7 @@
     width: 100%;
     margin-bottom: 32px;
 }
-.input_style_top{
-    width: 48%;
-}
+
 .input_style:focus{
     outline: none;
 }
@@ -732,15 +728,14 @@
     text-align: right;
     color: #ffffff;
 }
-.footer_nav_link{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/*.footer_nav_link{*/
+/*    width: 40%;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*}*/
 .footer_nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -825,7 +820,7 @@
         margin-bottom: 60px;
     }
     .top_messengers{
-        width: 60%;
+        width: 80%;
         justify-content: space-around;
     }
     .messenger{
@@ -861,7 +856,7 @@
         text-align: left;
     }
     .teacher_box {
-        width: 330px;
+        width: 320px;
     }
 
     .about_school_title{
@@ -980,7 +975,7 @@
         margin-top: 12px;
         width: 100%;
         box-sizing: border-box;
-        padding: 16px 16px 240px 16px;
+        padding: 16px 16px 280px 16px;
     }
     .future_free_lesson_time_data {
         font-size: 12px;
@@ -1032,6 +1027,28 @@
         text-align: center;
     }
 
+    .input_block{
+        width: 80%;
+    }
+    .input_block_top{
+        flex-direction: column;
+    }
+    .input_style_top{
+        width: 100%;
+    }
+
+    .footer_nav{
+        flex-direction: column;
+    }
+    .footer_nav_link{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .top_messengers_footer{
+        display: none;
+    }
     }
 @media (min-width: 410px) {
     .wrapper {
@@ -1076,6 +1093,15 @@
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
+    }
+    .input_block{
+        width: 60%;
+    }
+    .input_block_top{
+        flex-direction: row;
+    }
+    .input_style_top{
+        width: 48%;
     }
 }
 @media (min-width: 768px) {
@@ -1257,6 +1283,16 @@
         padding-bottom: 150px;
         width: auto;
     }
+
+    .footer_nav{
+        flex-direction: row;
+    }
+    .footer_msgs{
+        display: none;
+    }
+    .top_messengers_footer{
+        display: block;
+    }
 }
 @media (min-width: 910px) {
     .wrapper {
@@ -1363,5 +1399,4 @@
     .wrapper {
         max-width: 1340px;
     }
-
 }
