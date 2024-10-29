@@ -119,23 +119,17 @@
 }
 .about_title{
     font-family: Roboto;
-    font-size: 46px;
     font-weight: 600;
     line-height: 62px;
     color: #791221;
-    text-align: center;
-    margin-bottom: 40px;
 }
 .about_top_block{
     width: 100%;
     box-sizing: border-box;
     background-color: #791221;
     border-radius: 30px;
-    padding: 34px 80px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 42px;
 }
 .about_top_box{
     box-sizing: border-box;
@@ -174,7 +168,6 @@
 }
 .lesson_type_box{
     padding: 24px 16px;
-    width: 46%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -336,7 +329,6 @@
 }
 .teacher_title{
     font-family: Open Sans;
-    font-size: 46px;
     font-weight: 600;
     line-height: 63px;
     text-align: center;
@@ -405,7 +397,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.teachers_block::-webkit-scrollbar { width: 0; }
+.teachers_block::-webkit-scrollbar {
+    width: 0;
+}
 
 .teacher_level_data{
     text-align: justify;
@@ -449,113 +443,13 @@
 }
 .about_school_title{
     font-family: Open Sans;
-    font-size: 46px;
     font-weight: 700;
     line-height: 63px;
-    text-align: center;
     color: #791221;
     margin-bottom: 34px;
 }
 .about_school_block{
     position: relative;
-}
-.about_school_s1{
-    position: relative;
-    left: 0;
-    top: -64px;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 416px;
-    padding: 30px;
-    border-radius: 30px;
-    background: #791221;
-}
-.about_school_s1_img{
-    border-radius: 20px;
-    margin-bottom: 24px;
-}
-.about_school_s_text_title{
-    font-family: Open Sans;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 33px;
-    text-align: left;
-    margin-bottom: 22px;
-    color: #FFFFFF;
-
-}
-.about_school_s_text{
-    font-family: Open Sans;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    color: #FFFFFF;
-}
-.about_school_s2{
-    position: relative;
-    right: -60px;
-    top: -32px;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 454px;
-    padding: 30px;
-    border-radius: 30px;
-    background: #791221;
-}
-.about_school_s3{
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 800px;
-    height: 187px;
-    padding: 30px;
-    border-radius: 30px;
-    background: #791221;
-}
-.about_school_s3_content{
-    display: flex ;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.about_school_s4{
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 464px;
-    border-radius: 30px;
-    padding: 30px;
-    background: #791221;
-    z-index: 200;
-}
-.about_school_s4_img{
-    width: 60%;
-    margin-bottom: 16px;
-}
-.about_school_s5{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 500px;
-    border-radius: 30px;
-    padding: 30px;
-    background: #791221;
-}
-.about_school_s5_img{
-    position: absolute;
-    right: 0;
-    top: -2px;
-}
-.about_school_big_img{
-    position: absolute;
-    top:0;
-    left:50%;
-    transform:translate(-50%, 0%);
-    padding-bottom: 150px;
 }
 
 .future_background{
@@ -565,7 +459,6 @@
 }
 .future_block{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .future_title{
@@ -601,21 +494,11 @@
     color: #ffffff;
     margin-left: 12px;
 }
-.future_data_box_s2{
-    position: relative;
-    left: 30%;
-    padding-right: 80px;
-}
-.future_data_box_s4{
-    position: relative;
-    left: 10%;
-}
 .future_free_lesson {
     position: relative;
     background: url("../img/Background_lesson.png") no-repeat center, #00000033;
     background-size: 100% 100%;
-    padding: 16px;
-    width: 40%;
+    /*width: 40%;*/
     border-radius: 30px;
 
 }
@@ -630,9 +513,7 @@
 }
 .future_free_lesson_title{
     font-family: Open Sans;
-    font-size: 32px;
     font-weight: 600;
-    line-height: 44px;
     text-align: center;
     color: #791221;
 }
@@ -647,7 +528,6 @@
 }
 .future_free_lesson_time_data{
     font-family: Open Sans;
-    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     color: #ffffff;
@@ -671,7 +551,6 @@
     text-align: center;
     width: 60%;
     font-family: Open Sans;
-    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     color: #ffffff;
@@ -712,10 +591,8 @@
     margin-bottom: 36px;
 }
 .test_top_block{
-    padding: 36px 70px;
     background-color: #ffffff;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     border: 10px solid #791221;
     border-radius: 30px;
@@ -724,10 +601,7 @@
 }
 .test_top_block_text{
     font-family: Open Sans;
-    font-size: 32px;
     font-weight: 700;
-    line-height: 44px;
-    text-align: left;
     color: #791221;
 }
 .test_top_block_button{
@@ -736,7 +610,6 @@
     color: #ffffff;
     border: none;
     font-family: Open Sans;
-    font-size: 19px;
     font-weight: 600;
     line-height: 28px;
     text-align: center;
@@ -970,8 +843,161 @@
     .messenger{
         padding: 8px;
     }
+    .about_title{
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .about_top_block{
+        padding: 34px 34px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .about_top_box_content_text_top{
+        display: none;
+    }
+    .about_top_box{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #FFFFFF ;
+    }
+    .about_top_box_content_text{
+        font-size: 15px;
+    }
+    .lesson_type{
+        display: none;
+    }
+    .teacher_title{
+        font-size: 24px;
+        text-align: left;
+    }
 
-}
+    .about_school_title{
+        font-size: 24px;
+        text-align: left;
+
+    }
+    .about_school_s1{
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 14px 24px;
+        border-radius: 30px;
+        background: #791221;
+    }
+    .about_school_s1_img{
+        border-radius: 20px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    .about_school_s_text_title{
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 33px;
+        text-align: left;
+        margin-bottom: 22px;
+        color: #FFFFFF;
+
+    }
+    .about_school_s_text{
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .about_school_s2{
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 14px 24px;
+        border-radius: 30px;
+        background: #791221;
+    }
+    .about_school_s3{
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 187px;
+        padding: 14px 24px;
+        border-radius: 30px;
+        background: #791221;
+    }
+    .about_school_s3_content{
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about_school_s3_img{
+        display: none;
+    }
+    .about_school_s4{
+        overflow: hidden;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 14px 24px;
+        background: #791221;
+    }
+    .about_school_s4_img{
+        width: 60%;
+        margin-bottom: 16px;
+    }
+    .about_school_s5{
+        overflow: hidden;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 14px 24px;
+        background: #791221;
+    }
+    .about_school_s5_img{
+        display: none
+    }
+    .about_school_big_img{
+        width: 100%;
+    }
+    .about_school_block_mb{
+        margin-bottom: 12px;
+    }
+
+    .future_block{
+        flex-direction: column;
+    }
+    .future_free_lesson_title{
+        font-size: 20px;
+        line-height: 25px;
+
+    }
+    .future_free_lesson{
+        margin-top: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px 16px 240px 16px;
+    }
+    .future_free_lesson_time_data {
+        font-size: 12px;
+    }
+    .future_free_lesson_gift_text {
+        font-size: 12px;
+
+    }
+
+    .test_top_block{
+        flex-direction: column;
+        padding: 32px 46px;
+
+    }
+    .test_top_block_text{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .test_top_block_button{
+        font-size: 16px;
+    }
+
+    }
 @media (min-width: 410px) {
     .wrapper {
         max-width: 370px;
@@ -986,10 +1012,32 @@
     .wrapper {
         max-width: 570px;
     }
+    .lesson_type{
+        display: block;
+    }
+    .lesson_type_box{
+        width: 100%;
+    }
+    .lesson_type_box_white{
+        width: 100%;
+    }
+    .teacher_title{
+        font-size: 46px;
+        text-align: center;
+    }
 }
 @media (min-width: 710px) {
     .wrapper {
         max-width: 670px;
+    }
+    .about_top_block{
+        flex-direction: row;
+        margin-bottom: 42px;
+    }
+    .about_top_box{
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
     }
 }
 @media (min-width: 768px) {
@@ -997,13 +1045,163 @@
         width: 30%;
         justify-content: space-between;
     }
-}
+    .future_block{
+        flex-direction: row;
+    }
+    .future_free_lesson{
+        width: 40%;
+        padding: 16px;
+        margin-top: 0;
+    }
+    .future_free_lesson_title {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .future_free_lesson_time_data {
+        font-size: 18px;
+    }
+    .future_data_box_s2{
+        position: relative;
+        left: 30%;
+        padding-right: 80px;
+    }
+    .future_data_box_s4{
+        position: relative;
+        left: 10%;
+    }
+    .future_free_lesson_gift_text {
+        font-size: 18px;
+    }
+    }
 @media (min-width: 810px) {
     .wrapper {
         max-width: 770px;
     }
     .button_top_img{
         display: block;
+    }
+    .about_title{
+        font-size: 46px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about_top_block{
+        padding: 34px 80px;
+        flex-direction: row;
+    }
+    .about_top_box_content_text_top{
+        display: block;
+    }
+    .about_top_box_content_text{
+        font-size: 28px;
+    }
+
+    .about_school_title{
+        font-size: 46px;
+        text-align: center;
+    }
+    .about_school_s1{
+        position: relative;
+        left: 0;
+        top: -64px;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 416px;
+        padding: 30px;
+        border-radius: 30px;
+        background: #791221;
+    }
+    .about_school_s1_img{
+        border-radius: 20px;
+        margin-bottom: 24px;
+    }
+    .about_school_s_text_title{
+        font-family: Open Sans;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+        text-align: left;
+        margin-bottom: 22px;
+        color: #FFFFFF;
+
+    }
+    .about_school_s_text{
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .about_school_s2{
+        position: relative;
+        right: -60px;
+        top: -32px;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 454px;
+        padding: 30px;
+        border-radius: 30px;
+        background: #791221;
+    }
+    .about_school_s3{
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 800px;
+        height: 187px;
+        padding: 30px;
+        border-radius: 30px;
+        background: #791221;
+    }
+    .about_school_s3_content{
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about_school_s3_img{
+        display: block;
+    }
+    .about_school_s4{
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 464px;
+        border-radius: 30px;
+        padding: 30px;
+        background: #791221;
+        z-index: 200;
+    }
+    .about_school_s4_img{
+        width: 60%;
+        margin-bottom: 16px;
+    }
+    .about_school_s5{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 500px;
+        border-radius: 30px;
+        padding: 30px;
+        background: #791221;
+    }
+    .about_school_s5_img{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -2px;
+    }
+    .about_school_big_img{
+        position: absolute;
+        top:0;
+        left:50%;
+        transform:translate(-50%, 0%);
+        padding-bottom: 150px;
+        width: auto;
     }
 }
 @media (min-width: 910px) {
@@ -1044,11 +1242,28 @@
     .wrapper {
         max-width: 952px;
     }
+
 }
 @media (min-width: 1010px) {
     .wrapper {
         max-width: 970px;
     }
+    .test_top_block{
+        flex-direction: row;
+        padding: 36px 70px;
+
+    }
+    .test_top_block_text{
+        font-size: 32px;
+        line-height: 44px;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .test_top_block_button{
+        font-size: 19px;
+    }
+
 }
 @media (min-width: 1110px) {
     .wrapper {
@@ -1058,6 +1273,12 @@
 @media (min-width: 1210px) {
     .wrapper {
         max-width: 1160px;
+    }
+    .lesson_type_box{
+        width: 46%;
+    }
+    .lesson_type_box_white{
+        width: 46%;
     }
 }
 @media (min-width: 1440px) {

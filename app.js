@@ -3,6 +3,7 @@
 try {
     const btnOpenModal = document.getElementById('openModal');
     const btnClosedModal = document.getElementById('close_icon');
+    const top_btn = document.getElementById('top_btn');
     const btnsubmit = document.getElementById('closedModal');
     const modal = document.getElementById('modal');
     const userNameInput = document.getElementById('userNameInput');
@@ -42,6 +43,7 @@ try {
         document.body.classList.remove('main_hidden');
     }
     btnOpenModal.addEventListener('click', open);
+    top_btn.addEventListener("click", open);
     btnClosedModal.addEventListener('click', exit);
     btnsubmit.addEventListener('click', closed);
     userPhoneInput.addEventListener('focus', _ => {
@@ -89,6 +91,8 @@ catch (e)
 //lesson_type start
 try{
     const lessonType = document.getElementsByClassName('lesson_type_block');
+    const btnLeftLesson = document.getElementById('lesson_type_btn_left');
+    const btnRightLesson = document.getElementById('lesson_type_btn_right');
     const idToElem = () => {
         for (let i=0; i < lessonType.length; i++){
             lessonType[i].id = `lessonType`+i;
@@ -97,7 +101,42 @@ try{
         }
     }
 
+    const isActive = () => {
+        for(let i = 0; i < lessonType.length; i++){
+            if(!lessonType[i].classList.contains('invisible')){
+                return Number(lessonType[i].id.slice(-1))
+            }
+        }
+    }
+    const stepLeft = () => {
+        if(+isActive() === 0){
+            return false
+        }
+        else {
+            let next = +isActive() - 1;
+            for (let i = 0; i < lessonType.length; i++){
+                lessonType[i].classList.add('invisible');
+                lessonType[next].classList.remove('invisible');
+            }
+        }
+    }
+    const stepRight = () =>{
+        let next = +isActive() + 1;
+        if(next === lessonType.length){
+            return false
+        }
+        else {
+            for (let i = 0; i < lessonType.length; i++){
+                lessonType[i].classList.add('invisible');
+                lessonType[next].classList.remove('invisible');
+            }
+        }
+    }
+
+
     idToElem();
+    btnLeftLesson.addEventListener('click', stepLeft);
+    btnRightLesson.addEventListener('click', stepRight)
 }
 catch (e){
     console.log(e)
