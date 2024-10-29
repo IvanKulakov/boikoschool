@@ -142,5 +142,28 @@ catch (e){
     console.log(e)
 }
 
-
 //lesson_type end
+
+//burger menu block start
+try{
+    const burgerMenuOpenBTN = document.getElementById('burger-menu-open');
+    const burgerMenu = document.getElementById('burger-menu');
+    const burgerMenuCloseBTN = document.getElementById('burger-menu-close');
+    const burgerMenuStickOpen = document.getElementById('open-burger-stick-menu');
+
+
+    const openBurger = () => {
+        burgerMenu.classList.add('_active-burger-menu')
+    }
+    const closeBurger = () => {
+        burgerMenu.classList.remove('_active-burger-menu')
+    }
+    window.addEventListener('scroll', closeBurger)
+    burgerMenuOpenBTN.addEventListener('click', openBurger);
+    burgerMenuCloseBTN.addEventListener('click', closeBurger);
+    // burgerMenuStickOpen.addEventListener('click', openBurger);
+}
+catch (e){
+    console.log(e)
+}
+//burger menu block end
