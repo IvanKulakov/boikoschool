@@ -340,7 +340,6 @@
     display: inline-block;
     overflow: hidden;
     flex-shrink: 0;
-    width: 360px;
     border-radius: 30px;
     background: #00000033;
     padding-top: 20px;
@@ -463,10 +462,8 @@
 }
 .future_title{
     font-family: Open Sans;
-    font-size: 46px;
     font-weight: 600;
     line-height: 63px;
-    text-align: center;
     color: #ffffff;
     margin-bottom: 60px;
 }
@@ -474,12 +471,11 @@
     position: relative;
 }
 .future_data_box{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    width: fit-content;
     align-items: center;
     border: 3px solid #FFFFFF;
-    padding: 25px 19px;
     border-radius: 30px;
 }
 .future_data_box_mb{
@@ -487,9 +483,7 @@
 }
 .future_data_box_text{
     font-family: Open Sans;
-    font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
     text-align: left;
     color: #ffffff;
     margin-left: 12px;
@@ -828,7 +822,6 @@
     .button_top{
         font-size: 14px;
         font-weight: 600;
-        line-height: 44px;
         margin-bottom: 60px;
     }
     .top_messengers{
@@ -862,9 +855,13 @@
     .lesson_type{
         display: none;
     }
+
     .teacher_title{
         font-size: 24px;
         text-align: left;
+    }
+    .teacher_box {
+        width: 330px;
     }
 
     .about_school_title{
@@ -954,8 +951,25 @@
         margin-bottom: 12px;
     }
 
+    .future_title{
+        font-size: 24px;
+        text-align: left;
+    }
     .future_block{
         flex-direction: column;
+    }
+    .future_data_box{
+        width: 100%;
+        padding: 18px 13px;
+    }
+    .future_data_box_img{
+        width: 37px;
+        height: 34px;
+    }
+    .future_data_box_text {
+        font-size: 12px;
+        line-height: 16px;
+
     }
     .future_free_lesson_title{
         font-size: 20px;
@@ -1046,6 +1060,9 @@
         font-size: 46px;
         text-align: center;
     }
+    .teacher_box {
+        width: 360px;
+    }
 }
 @media (min-width: 710px) {
     .wrapper {
@@ -1065,6 +1082,10 @@
     .top_messengers{
         width: 30%;
         justify-content: space-between;
+    }
+    .future_title{
+        font-size: 46px;
+        text-align: center;
     }
     .future_block{
         flex-direction: row;
@@ -1092,6 +1113,18 @@
     }
     .future_free_lesson_gift_text {
         font-size: 18px;
+    }
+    .future_data_box_img{
+        width: auto;
+        height: auto;
+    }
+    .future_data_box_text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .future_data_box{
+        width: fit-content;
+        padding: 25px 19px;
     }
     }
 @media (min-width: 810px) {
