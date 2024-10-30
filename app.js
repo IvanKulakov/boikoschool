@@ -99,10 +99,8 @@ catch (e)
 //lesson_type start
 try{
     const lessonType = document.getElementsByClassName('lesson_type_block');
-    const swipeLessonType = document.getElementById('lesson_type_mob')
     const btnLeftLesson = document.getElementById('lesson_type_btn_left');
     const btnRightLesson = document.getElementById('lesson_type_btn_right');
-    console.log(swipeLessonType);
 
     const idToElem = () => {
         for (let i=0; i < lessonType.length; i++){
@@ -145,40 +143,7 @@ try{
         }
     }
 
-    let x1 = null;
-    let y1 = null;
 
-    const handleTouchStart = (event) => {
-        const firstTouch = event.touches[0];
-        x1 = firstTouch.clientX;
-        y1 = firstTouch.clientY;
-
-    }
-    const handleToucheMove = (event) =>{
-        if(!x1 || !y1){
-            return false;
-        }
-        let x2 = event.touches[0].clientX
-        let y2 = event.touches[0].clientY
-        let xDiff = x2 - x1;
-        let yDiff = y2 - y1;
-        if(Math.abs(xDiff) < Math.abs(yDiff)){
-            return false;
-        }
-        if (xDiff > 0){
-            stepLeft();
-        }
-        if(xDiff < 0){
-            stepRight();
-        }
-        x1 = null;
-        y1 = null;
-    }
-
-
-
-    swipeLessonType.addEventListener('touchstart', handleTouchStart, false);
-    swipeLessonType.addEventListener('touchmove', handleToucheMove, false);
     btnLeftLesson.addEventListener('click', stepLeft);
     btnRightLesson.addEventListener('click', stepRight)
 }
@@ -214,6 +179,7 @@ catch (e){
 //lesson_type_mob start
 try{
     const lessonTypeMob = document.getElementsByClassName('lesson_type_mob_box');
+    const swipeLessonType = document.getElementById('lesson_type_mob')
     const btnLeftLessonMob = document.getElementById('lesson_type_btn_left_mob');
     const btnRightLessonMob = document.getElementById('lesson_type_btn_right_mob');
 
@@ -227,7 +193,7 @@ try{
     }
 
 
-        const isActive = () => {
+    const isActive = () => {
         for(let i = 0; i < lessonTypeMob.length; i++){
             if(!lessonTypeMob[i].classList.contains('invisible')){
                 return Number(lessonTypeMob[i].id.slice(-1))
@@ -261,6 +227,41 @@ try{
 
 
     setIdForItems();
+
+    let x1 = null;
+    let y1 = null;
+
+    const handleTouchStart = (event) => {
+        const firstTouch = event.touches[0];
+        x1 = firstTouch.clientX;
+        y1 = firstTouch.clientY;
+
+    }
+    const handleToucheMove = (event) =>{
+        if(!x1 || !y1){
+            return false;
+        }
+        let x2 = event.touches[0].clientX
+        let y2 = event.touches[0].clientY
+        let xDiff = x2 - x1;
+        let yDiff = y2 - y1;
+        if(Math.abs(xDiff) < Math.abs(yDiff)){
+            return false;
+        }
+        if (xDiff > 0){
+            stepLeft();
+        }
+        if(xDiff < 0){
+            stepRight();
+        }
+        x1 = null;
+        y1 = null;
+    }
+
+
+
+    swipeLessonType.addEventListener('touchstart', handleTouchStart, false);
+    swipeLessonType.addEventListener('touchmove', handleToucheMove, false);
     btnLeftLessonMob.addEventListener('click', stepLeft);
     btnRightLessonMob.addEventListener('click', stepRight)
 
