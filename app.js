@@ -1,5 +1,4 @@
 //modal block start
-
 try {
     const btnOpenModal = document.getElementById('openModal');
     const btnOpenModalTestTop = document.getElementById('test_top_block_button');
@@ -95,7 +94,6 @@ catch (e)
 {
     console.log(e)
 }
-
 //teachers_block end
 
 //lesson_type start
@@ -151,7 +149,6 @@ try{
 catch (e){
     console.log(e)
 }
-
 //lesson_type end
 
 //burger menu block start
@@ -177,3 +174,62 @@ catch (e){
     console.log(e)
 }
 //burger menu block end
+
+//lesson_type_mob start
+try{
+    const lessonTypeMob = document.getElementsByClassName('lesson_type_mob_box');
+    const btnLeftLessonMob = document.getElementById('lesson_type_btn_left_mob');
+    const btnRightLessonMob = document.getElementById('lesson_type_btn_right_mob');
+
+
+    const setIdForItems = () => {
+        for (let i=0; i < lessonTypeMob.length; i++){
+            lessonTypeMob[i].id = `lessonType`+i;
+            lessonTypeMob[i].classList.add('invisible');
+            lessonTypeMob[0].classList.remove('invisible');
+        }
+    }
+
+
+        const isActive = () => {
+        for(let i = 0; i < lessonTypeMob.length; i++){
+            if(!lessonTypeMob[i].classList.contains('invisible')){
+                return Number(lessonTypeMob[i].id.slice(-1))
+            }
+        }
+    }
+    const stepLeft = () => {
+        if(+isActive() === 0){
+            return false
+        }
+        else {
+            let next = +isActive() - 1;
+            for (let i = 0; i < lessonTypeMob.length; i++){
+                lessonTypeMob[i].classList.add('invisible');
+                lessonTypeMob[next].classList.remove('invisible');
+            }
+        }
+    }
+    const stepRight = () =>{
+        let next = +isActive() + 1;
+        if(next === lessonTypeMob.length){
+            return false
+        }
+        else {
+            for (let i = 0; i < lessonTypeMob.length; i++){
+                lessonTypeMob[i].classList.add('invisible');
+                lessonTypeMob[next].classList.remove('invisible');
+            }
+        }
+    }
+
+
+    setIdForItems();
+    btnLeftLessonMob.addEventListener('click', stepLeft);
+    btnRightLessonMob.addEventListener('click', stepRight)
+
+}
+catch (e){
+    console.log(e)
+}
+//lesson_type_mob end

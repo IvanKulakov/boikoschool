@@ -4,8 +4,6 @@
     scroll-behavior: smooth;
 }
 
-
-
 .wrapper {
     min-width: 320px;
     width: 100%;
@@ -107,10 +105,15 @@
     display: flex;
     flex-direction: row;
 }
-.svg_top{
+.svg_top_pos {
     position: absolute;
     left: calc(50% - 41px);
     bottom: -43px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.svg_top{
+
 }
 
 .about{
@@ -306,7 +309,7 @@
     transition: opacity .5s;
     opacity: .5;
     cursor: pointer;
-
+    margin-right: 3px;
 }
 .lesson_type_btn_left:hover{
     transition: opacity .5s;
@@ -316,8 +319,122 @@
     transition: opacity .5s;
     opacity: .5;
     cursor: pointer;
+    margin-left: 3px;
 }
 .lesson_type_btn_right:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+.lesson_type_mob{
+    width: 100%;
+    background-color: #791221;
+    border-radius: 30px;
+    padding: 26px 20px 50px 20px;
+    box-sizing: border-box;
+}
+.lesson_type_mob_title{
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.lesson_type_mob_text{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.lessons_price_mob{
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.lessons_price_title_mob{
+    padding: 10px 16px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+}
+.lesson_block_coast_mob{
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.lesson_coast_mob{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    padding: 10px 16px;
+    color: #000000;
+}
+.lesson_type_img_mob{
+    margin-top: 22px;
+    background-color: #791221;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    object-fit: cover;
+}
+.lesson_img_mob{
+    object-fit: cover;
+}
+.lesson_img_mob_s1{
+    background: url("../img/online.jpg") no-repeat top;
+    background-size: cover;
+}
+.lesson_img_mob_s2{
+    background: url("../img/bussines.png") no-repeat top;
+    background-size: cover;
+}
+.lesson_img_mob_s3{
+    background: url("../img/zno.png") no-repeat top;
+    background-size: cover;
+}
+.lesson_img_mob_s4{
+    background: url("../img/offline.png") no-repeat top;
+    background-size: cover;
+}
+.lesson_type_btn_block_mob{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.lesson_type_btn_left_mob{
+    transform: scaleX(-1);
+    transition: opacity .5s;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.lesson_type_btn_left_mob:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+.lesson_type_btn_right_mob{
+    transition: opacity .5s;
+    opacity: .5;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.lesson_type_btn_right_mob:hover{
     transition: opacity .5s;
     opacity: 1;
 }
@@ -415,7 +532,6 @@
 .teachers_block::-webkit-scrollbar {
     width: 0;
 }
-
 .teacher_level_data{
     text-align: justify;
     height: 80px;
@@ -449,7 +565,6 @@
     transition: opacity .5s;
     opacity: 1;
 }
-
 
 .about_school_background{
     margin-top: 40px;
@@ -610,7 +725,7 @@
     color: #791221;
 }
 .test_top_block_button{
-    padding: 20px 38px;
+    padding: 18px 34px;
     background-color: #791221;
     color: #ffffff;
     border: none;
@@ -766,16 +881,7 @@
 }
 .contact_input_block{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-.input_block_contacts{
-    width: 48%;
-}
-.contact_input_content{
-    display: inline-block;
-    width: 48%;
-    padding-right: 100px;
 }
 .contact_input_content_title{
     font-family: Open Sans;
@@ -794,7 +900,8 @@
 }
 .contact_top_block_button{
     background-color: #FFFFFF;
-    color: #000000;
+    color:#791221;
+;
 }
 
 .invisible{
@@ -1077,7 +1184,20 @@
     .top_messengers_footer{
         display: none;
     }
+
+    .contact_input_block{
+        flex-direction: column;
     }
+    .input_block_contacts{
+        width: 100%;
+    }
+    .contact_input_content{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+
+}
 @media (min-width: 410px) {
     .wrapper {
         max-width: 370px;
@@ -1091,6 +1211,9 @@
 @media (min-width: 610px) {
     .wrapper {
         max-width: 570px;
+    }
+    .lesson_type_mob{
+        display: none;
     }
     .lesson_type{
         display: block;
@@ -1136,6 +1259,19 @@
     }
     .input_style_top{
         width: 48%;
+    }
+
+    .contact_input_block{
+        flex-direction: row;
+    }
+    .input_block_contacts{
+        width: 48%;
+    }
+    .contact_input_content{
+        width: 48%;
+        padding-right: 100px;
+        margin-bottom: 0;
+
     }
 }
 @media (min-width: 768px) {
