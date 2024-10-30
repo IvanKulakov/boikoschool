@@ -44,13 +44,11 @@
   border-radius: 100px;
   margin-bottom: 15px;
   font-family: Open Sans;
-  font-size: 19px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
   color: #ffffff;
   outline: none;
-  padding: 22px 24px;
 }
 .input-form::placeholder{
   color: #ffffff;
@@ -78,12 +76,9 @@
 }
 .btn_modal {
   background: none;
-  padding: 22px 56px;
   color:  #ffffff;
   font-family: Open Sans;
-  font-size: 24px;
   font-weight: 400;
-  line-height: 28px;
   border: 5px solid #ffffff;
   border-radius: 100px;
   cursor: pointer;
@@ -96,7 +91,6 @@
 }
 .title_text_modal{
   color: #ffffff;
-  font-size: 32px;
   line-height: 38px;
   overflow: hidden;
 }
@@ -121,21 +115,44 @@
   margin-top: 15px;
 }
 .input-form_check{
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-block: 0;
+  padding-inline: 0;
 }
 .input-form_check_text{
   font-family: Open Sans;
-  font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
-  text-align: justify;
+  text-align: left;
   color: #ffffff;
   margin-left: 16px;
 }
+.input-form_check_anim{
+  animation: animate_pulse 1.5s;
+}
+@keyframes animate_pulse {
+   0% {
+     transform: translate(0px) rotate(0deg);
+   }
+   20%{
+     transform: translate(-5px) rotate(25deg);
+   }
+   40%{
+     transform: translate(5px) rotate(-50deg);
+   }
+   80% {
+     transform: translate(-5px) rotate(25deg);
+   }
+   100% {
+     transform: translate(0px) rotate(0deg);
+   }
+ }
 @media (min-width: 320px) {
   .modal__content {
-    padding: 20px;
+    padding: 12px;
     width: 300px;
   }
   .close_icon {
@@ -144,6 +161,19 @@
     }
   .title_text_modal{
     margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .input-form{
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+  .input-form_check_text{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .btn_modal {
+    padding: 12px 30px;
+    font-size: 20px;
   }
 }
 @media (min-width: 610px) {
@@ -153,6 +183,7 @@
   }
   .title_text_modal{
     margin-bottom: 50px;
+    font-size: 32px;
   }
 }
 @media (min-width: 710px) {
@@ -168,6 +199,18 @@
   }
   .title_text_modal{
     margin-bottom: 40px;
+  }
+  .input-form{
+    font-size: 19px;
+    padding: 22px 24px;
+  }
+  .input-form_check_text{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .btn_modal {
+    padding: 22px 56px;
+    font-size: 24px;
   }
 }
 @media (min-width: 810px) {

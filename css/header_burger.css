@@ -30,6 +30,8 @@
   font-size: 12px;
   font-weight: 500;
   border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 @media (min-width: 320px) {

@@ -2,6 +2,8 @@
 
 try {
     const btnOpenModal = document.getElementById('openModal');
+    const btnOpenModalTestTop = document.getElementById('test_top_block_button');
+    const btnOpenModalTest = document.getElementById('test_block_button');
     const btnClosedModal = document.getElementById('close_icon');
     const top_btn = document.getElementById('top_btn');
     const btnsubmit = document.getElementById('closedModal');
@@ -18,8 +20,12 @@ try {
     const closed = function (event) {
         event.preventDefault();
         event.stopPropagation();
-        console.log(userCheck.checked)
+        const remAnim = () => {
+            userCheck.classList.remove('input-form_check_anim');
+        }
         if (userCheck.checked === false){
+            userCheck.classList.add('input-form_check_anim');
+            setTimeout(remAnim, 1000)
             return
         }
         if (userCheck.checked)
@@ -28,6 +34,7 @@ try {
             userPhoneInput.value = "";
             userPhoneEmail.value = "";
             userCheck.checked = false;
+            userCheck.classList.remove('input-form_check_anim');
             modal.classList.remove('modal-active');
             document.body.classList.remove('main_hidden');
         }
@@ -42,6 +49,8 @@ try {
         modal.classList.remove('modal-active');
         document.body.classList.remove('main_hidden');
     }
+    btnOpenModalTest.addEventListener("click", open)
+    btnOpenModalTestTop.addEventListener("click", open)
     btnOpenModal.addEventListener('click', open);
     top_btn.addEventListener("click", open);
     btnClosedModal.addEventListener('click', exit);

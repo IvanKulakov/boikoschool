@@ -48,6 +48,7 @@
     font-size: 19px;
     font-weight: 500;
     line-height: 27px;
+    text-decoration: none;
 }
 
 .white_line{
@@ -335,6 +336,7 @@
     margin-bottom: 66px;
 }
 .teacher_box{
+    transition: all .5s;
     box-sizing: border-box;
     display: inline-block;
     overflow: hidden;
@@ -344,6 +346,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-right: 20px;
+    cursor: pointer;
+}
+.teacher_box:hover{
+    background: #FFFFFF;
+    transition: all .5s
 }
 .teacher_photo_box{
     text-align: center;
@@ -362,8 +369,14 @@
     text-align: left;
     margin-bottom: 50px;
     color: #ffffff;
+    transition: all .5s ;
+}
+.teacher_box:hover .teacher_name{
+    color: #791221;
+    transition: all .5s ;
 }
 .teacher_level{
+    transition: all .5s;
     overflow: hidden;
     font-family: Open Sans;
     font-size: 16px;
@@ -374,6 +387,12 @@
     padding: 8px 12px;
     background-color: #ffffff;
     border-radius: 20px;
+}
+.teacher_box:hover .teacher_level {
+    transition: all .5s;
+    color: #FFFFFF;
+    background-color: #791221;
+
 }
 .teacher_level_mb{
     margin-bottom: 10px;
@@ -576,12 +595,9 @@
 }
 .text_title{
     font-family: Open Sans;
-    font-size: 46px;
     font-weight: 600;
     line-height: 63px;
-    text-align: center;
     color: #791221;
-    margin-bottom: 36px;
 }
 .test_top_block{
     background-color: #ffffff;
@@ -727,12 +743,6 @@
     text-align: right;
     color: #ffffff;
 }
-/*.footer_nav_link{*/
-/*    width: 40%;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-between;*/
-/*}*/
 .footer_nav{
     display: flex;
     justify-content: space-between;
@@ -984,17 +994,23 @@
 
     }
 
+    .text_title{
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+
     .test_top_block{
         flex-direction: column;
         padding: 32px 46px;
 
     }
     .test_top_block_text{
-        font-size: 20px;
+        font-size: 19px;
         line-height: 25px;
-        text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
+        text-align: center;
     }
     .test_top_block_button{
         font-size: 16px;
@@ -1002,7 +1018,7 @@
 
     .test_block{
         background: #FFFFFF;
-        padding: 14px 20px;
+        padding: 14px 16px;
     }
     .test_block_top_text {
         font-size: 16px;
@@ -1015,7 +1031,7 @@
     .test_block_text {
         font-size: 16px;
         width: 100%;
-        text-align: justify;
+        text-align: left;
     }
     .test_block_mob_img{
         width: 100%;
@@ -1151,6 +1167,11 @@
         width: fit-content;
         padding: 25px 19px;
     }
+    .text_title{
+        font-size: 46px;
+        text-align: center;
+        margin-bottom: 36px;
+    }
     }
 @media (min-width: 810px) {
     .wrapper {
@@ -1202,7 +1223,6 @@
         text-align: left;
         margin-bottom: 22px;
         color: #FFFFFF;
-
     }
     .about_school_s_text{
         font-family: Open Sans;
@@ -1290,7 +1310,9 @@
         display: none;
     }
     .top_messengers_footer{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 @media (min-width: 910px) {
@@ -1322,7 +1344,6 @@
         line-height: 44px;
         margin-bottom: 64px;
     }
-
     .messenger{
         padding: 0;
     }
@@ -1331,7 +1352,6 @@
     .wrapper {
         max-width: 952px;
     }
-
 }
 @media (min-width: 1010px) {
     .wrapper {
@@ -1352,7 +1372,6 @@
     .test_top_block_button{
         font-size: 19px;
     }
-
     .test_block{
         background: url("../img/BackgroundTest.png") no-repeat center;
         padding: 36px 70px;
