@@ -323,7 +323,6 @@
 }
 
 .teacher_background{
-    padding-top: 75px;
     padding-bottom: 50px;
     background-color: #791221;
 }
@@ -333,7 +332,6 @@
     line-height: 63px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 66px;
 }
 .teacher_box{
     transition: all .5s;
@@ -470,7 +468,6 @@
 }
 
 .future_background{
-    padding-top: 75px;
     padding-bottom: 50px;
     background-color: #791221;
 }
@@ -483,7 +480,6 @@
     font-weight: 600;
     line-height: 63px;
     color: #ffffff;
-    margin-bottom: 60px;
 }
 .future_data{
     position: relative;
@@ -735,6 +731,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.footer_top_content_pos{
+    display:flex ;
+    flex-direction: column;
+    align-items: end;
+
+}
 .footer_top_content{
     font-family: Open Sans;
     font-size: 16px;
@@ -742,6 +744,7 @@
     line-height: 24px;
     text-align: right;
     color: #ffffff;
+    text-decoration: none;
 }
 .footer_nav{
     display: flex;
@@ -860,9 +863,14 @@
         display: none;
     }
 
+    .teacher_background {
+        padding-top: 34px;
+    }
     .teacher_title{
         font-size: 24px;
         text-align: left;
+        margin-bottom: 20px;
+
     }
     .teacher_box {
         width: 320px;
@@ -955,9 +963,14 @@
         margin-bottom: 12px;
     }
 
+    .future_background{
+        padding-top: 34px;
+    }
     .future_title{
         font-size: 24px;
         text-align: left;
+        margin-bottom: 20px;
+
     }
     .future_block{
         flex-direction: column;
@@ -1088,9 +1101,15 @@
     .lesson_type_box_white{
         width: 100%;
     }
+
+    .teacher_background{
+        padding-top: 75px;
+    }
     .teacher_title{
         font-size: 46px;
         text-align: center;
+        margin-bottom: 60px;
+
     }
     .teacher_box {
         width: 360px;
@@ -1124,9 +1143,13 @@
         width: 30%;
         justify-content: space-between;
     }
+    .future_background{
+        padding-top: 75px;
+    }
     .future_title{
         font-size: 46px;
         text-align: center;
+        margin-bottom: 60px;
     }
     .future_block{
         flex-direction: row;
