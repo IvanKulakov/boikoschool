@@ -154,7 +154,7 @@
     font-family: Open Sans;
     font-size: 28px;
     font-weight: 600;
-    line-height: 38px;
+    line-height: 24px;
     color: #ffffff;
 }
 
@@ -951,7 +951,7 @@
         margin-bottom: 20px;
     }
     .about_top_block{
-        padding: 34px 34px;
+        padding: 24px 24px;
         flex-direction: column;
         margin-bottom: 20px;
     }
