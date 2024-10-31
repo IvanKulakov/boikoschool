@@ -133,6 +133,24 @@
 .input-form_check_anim{
   animation: animate_pulse 1.5s;
 }
+
+.answer__content{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05), 0px 4px 14px rgba(0, 0, 0, 0.15);
+
+  background: rgba(121, 18, 33, 1);
+  border: 4px solid rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.answer__content_text{
+  font-family: Open Sans;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+
 @keyframes animate_pulse {
    0% {
      transform: translate(0px) rotate(0deg);
@@ -175,7 +193,16 @@
     padding: 12px 30px;
     font-size: 20px;
   }
-}
+
+  .answer__content{
+    padding: 30px;
+  }
+  .answer__content_text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  }
 @media (min-width: 610px) {
   .modal__content {
     padding: 50px;
@@ -184,6 +211,13 @@
   .title_text_modal{
     margin-bottom: 50px;
     font-size: 32px;
+  }
+  .answer__content{
+    padding: 80px 80px;
+  }
+  .answer__content_text {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 @media (min-width: 710px) {
@@ -211,6 +245,13 @@
   .btn_modal {
     padding: 22px 56px;
     font-size: 24px;
+  }
+  .answer__content{
+    padding: 114px 128px;
+  }
+  .answer__content_text {
+    font-size: 32px;
+    line-height: 30px;
   }
 }
 @media (min-width: 810px) {

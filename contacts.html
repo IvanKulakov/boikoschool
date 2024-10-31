@@ -593,6 +593,72 @@
     </div>
 </footer>
 
+<!--modal-->
+<div id="modal" class="modal">
+    <div class="modal__content">
+        <svg id="close_icon"
+             class="close_icon"
+             width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.8" y="0.8" width="26.4" height="26.4" rx="13.2" stroke="white" stroke-width="1.6"/>
+            <path d="M9 19L19 9M9 9L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="modal_block_title">
+            <p class="title_text_modal">Отримайте пробне заняття</p>
+        </div>
+        <form class="modal_form">
+            <input
+                    class="input-form"
+                    id="userNameInput"
+                    type="text"
+                    name="userName"
+                    placeholder="Ім’я"
+                    value=""
+            />
+            <input
+                    class="input-form"
+                    id="userPhoneInput"
+                    type="tel"
+                    name="userPhone"
+                    placeholder="Номер телефону*"
+                    value=""
+            />
+            <input
+                    class="input-form"
+                    id="userPhoneEmail"
+                    type="text"
+                    name="userEmail"
+                    placeholder="Email"
+                    value=""
+            />
+            <div class="input-form_check_box">
+                <input
+                        class="input-form_check"
+                        id="userOk"
+                        type="checkbox"
+                        value=false
+                />
+                <p class="input-form_check_text">Я не робот і погоджуюсь з публічною офертою і з політикою конфіденційності</p>
+            </div>
+            <button
+                    id="closedModal"
+                    class="btn_modal"
+                    type="submit"
+            >
+                Отримати
+            </button>
+        </form>
+    </div>
+</div>
+
+<!--answer-->
+<div id="answer" class="modal">
+    <div class="answer__content">
+        <p class="answer__content_text">
+            Дякуємо, Ваша заявка</br> відправлена!
+        </p>
+    </div>
+</div>
+
 
 </body>
 <script src="app.js"></script>

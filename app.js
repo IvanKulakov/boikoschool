@@ -1,3 +1,15 @@
+const answerWindow = document.getElementById('answer');
+const sendToTelegram = (data, email, customer, telephone) => {
+    if(telephone.length > 5) {
+        const token = '7010775807:AAE2WfgujKgk-117ZQU8Jv9SM9JYX997GQs';
+        const chatId = '-1002458740988';
+        const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text= Ім'я ${customer}, телефон ${telephone}, email ${email}, опис ${data}`;
+        const xhttp = new XMLHttpRequest();
+        xhttp.open('GET', url, true);
+        xhttp.send();
+    }
+};
+
 //modal block start
 try {
     const btnOpenModal = document.getElementById('openModal');
@@ -68,7 +80,8 @@ try {
 
 
 }
-catch (e){
+catch (e)
+{
     console.log(e)
 }
 //modal block end
@@ -147,7 +160,8 @@ try{
     btnLeftLesson.addEventListener('click', stepLeft);
     btnRightLesson.addEventListener('click', stepRight)
 }
-catch (e){
+catch (e)
+{
     console.log(e)
 }
 //lesson_type end
@@ -171,7 +185,8 @@ try{
     burgerMenuCloseBTN.addEventListener('click', closeBurger);
     // burgerMenuStickOpen.addEventListener('click', openBurger);
 }
-catch (e){
+catch (e)
+{
     console.log(e)
 }
 //burger menu block end
@@ -266,7 +281,8 @@ try{
     btnRightLessonMob.addEventListener('click', stepRight)
 
 }
-catch (e){
+catch (e)
+{
     console.log(e)
 }
 //lesson_type_mob end
