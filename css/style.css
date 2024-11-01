@@ -475,14 +475,20 @@
     background: #FFFFFF;
     transition: all .5s
 }
+.teacher_box_last{
+    margin-right: 0;
+}
+
 .teacher_photo_box{
     text-align: center;
     margin-left: 22px;
     margin-right: 22px;
+    border-radius: 22px;
+    height: 320px;
+    overflow: hidden;
 }
 .teacher_photo{
     width: 100%;
-    border-radius: 22px;
 }
 .teacher_name{
     font-family: Open Sans;
@@ -490,7 +496,7 @@
     font-weight: 600;
     line-height: 44px;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #ffffff;
     transition: all .5s ;
 }
@@ -541,7 +547,7 @@
     width: 0;
 }
 .teacher_level_data{
-    text-align: justify;
+    text-align: left;
     height: 80px;
     white-space: pre-wrap;
 
