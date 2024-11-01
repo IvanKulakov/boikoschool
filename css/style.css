@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 }
 
+.main_logo{
+    text-decoration: none;
+}
+
 .mess_link{
     text-decoration: none;
 }
