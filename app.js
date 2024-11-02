@@ -10,7 +10,7 @@ const closedAns = () => {
 const sendToTelegram = (data, email, customer, telephone) => {
     if(telephone.length > 5) {
         const token = '7692906451:AAEyd1StWeAMOncCyMWqm6dhxkpy3Yhv9_Q';
-        const chatId = '-1002458740988';
+        const chatId = '-4593811739';
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text= Ім'я ${customer}, телефон ${telephone}, email ${email}, опис ${data}`;
         const xhttp = new XMLHttpRequest();
         xhttp.open('GET', url, true);
@@ -52,7 +52,7 @@ try {
             return
         }
         if (userCheck.checked)
-        {// sendToTelegram(itemName[idButton], userNameInput.value, userPhoneInput.value);
+        { sendToTelegram('modal', userPhoneEmail.value, userNameInput.value, userPhoneInput.value);
             userNameInput.value = "";
             userPhoneInput.value = "";
             userPhoneEmail.value = "";
@@ -298,3 +298,31 @@ catch (e)
     console.log(e)
 }
 //lesson_type_mob end
+
+//footer send block start
+const inputNameFooter = document.getElementById('inputNameFooter');
+const inputTelFooter = document.getElementById('inputTelFooter');
+const inputEMailFooter = document.getElementById('inputEmailFooter');
+const inputDataFooter = document.getElementById('inputDataFooter');
+const inputBtnFooter = document.getElementById('inputBtnFooter');
+const sendFooterData = function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    sendToTelegram(inputDataFooter.value, inputEMailFooter.value , inputNameFooter.value, inputTelFooter.value);
+    inputNameFooter.value = "";
+    inputTelFooter.value = "";
+    inputDataFooter.value = "";
+    inputEMailFooter.value = "";
+}
+inputTelFooter.addEventListener('focus', _ => {
+    if(!/^\+\d*$/.test(inputTelFooter.value))
+        inputTelFooter.value = '+38';
+
+});
+inputTelFooter.addEventListener('keypress', e => {
+    if(!/\d/.test(e.key)) {
+        e.preventDefault();
+    }
+});
+inputBtnFooter.addEventListener('click', sendFooterData);
+//footer send block end
