@@ -9,7 +9,7 @@ const closedAns = () => {
 }
 const sendToTelegram = (data, email, customer, telephone) => {
     if(telephone.length > 5) {
-        const token = '7692906451:AAEyd1StWeAMOncCyMWqm6dhxkpy3Yhv9_Q';
+        const token = '7829522309:AAFMefQ5F3hEEv8duAurDqHbc0XuPpoFrR4';
         const chatId = '-4593811739';
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text= Ім'я ${customer}, телефон ${telephone}, email ${email}, опис ${data}`;
         const xhttp = new XMLHttpRequest();
@@ -20,7 +20,7 @@ const sendToTelegram = (data, email, customer, telephone) => {
 
     }
 };
-// https://api.telegram.org/bot7692906451:AAEyd1StWeAMOncCyMWqm6dhxkpy3Yhv9_Q/getUpdates
+// https://api.telegram.org/bot7829522309:AAFMefQ5F3hEEv8duAurDqHbc0XuPpoFrR4/getUpdates
 
 //modal block start
 try {
