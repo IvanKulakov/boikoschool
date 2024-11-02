@@ -1,14 +1,26 @@
 const answerWindow = document.getElementById('answer');
+const openAns = () => {
+    answerWindow.classList.add('modal-active');
+    document.body.classList.add('main_hidden');
+}
+const closedAns = () => {
+    answerWindow.classList.remove('modal-active');
+    document.body.classList.remove('main_hidden');
+}
 const sendToTelegram = (data, email, customer, telephone) => {
     if(telephone.length > 5) {
-        const token = '7010775807:AAE2WfgujKgk-117ZQU8Jv9SM9JYX997GQs';
+        const token = '7692906451:AAEyd1StWeAMOncCyMWqm6dhxkpy3Yhv9_Q';
         const chatId = '-1002458740988';
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text= Ім'я ${customer}, телефон ${telephone}, email ${email}, опис ${data}`;
         const xhttp = new XMLHttpRequest();
         xhttp.open('GET', url, true);
         xhttp.send();
+        openAns();
+        setTimeout(closedAns, 1500)
+
     }
 };
+// https://api.telegram.org/bot7692906451:AAEyd1StWeAMOncCyMWqm6dhxkpy3Yhv9_Q/getUpdates
 
 //modal block start
 try {

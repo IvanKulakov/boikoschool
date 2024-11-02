@@ -1180,6 +1180,10 @@
         width: 100%;
         text-align: center;
     }
+    .test_block_top_content_big{
+        display: none;
+    }
+
 
     .input_block{
         width: 80%;
@@ -1356,6 +1360,12 @@
         font-size: 46px;
         text-align: center;
         margin-bottom: 36px;
+    }
+    .test_block_top_content_big{
+        display: block;
+    }
+    .test_block_top_content_mob{
+        display: none;
     }
     }
 @media (min-width: 810px) {
