@@ -717,18 +717,20 @@
 .test_background{
     padding-top: 36px;
     padding-bottom: 36px;
+    background-color: #791221;
+
 }
 .text_title{
     font-family: Open Sans;
     font-weight: 600;
     line-height: 63px;
-    color: #791221;
+    color: #ffffff;
 }
 .test_top_block{
-    background-color: #ffffff;
+    background-color: #791221;
     display: flex;
     justify-content: space-between;
-    border: 10px solid #791221;
+    border: 10px solid #ffffff;
     border-radius: 30px;
     align-items: center;
     margin-bottom: 20px;
@@ -736,12 +738,12 @@
 .test_top_block_text{
     font-family: Open Sans;
     font-weight: 700;
-    color: #791221;
+    color: #ffffff;
 }
 .test_top_block_button{
     padding: 18px 34px;
-    background-color: #791221;
-    color: #ffffff;
+    background-color: #ffffff1;
+    color: #791221;
     border: none;
     font-family: Open Sans;
     font-weight: 600;
@@ -752,7 +754,7 @@
 }
 .test_block{
     background-size: 100% 100%;
-    border: 10px solid #791221;
+    border: 10px solid #ffffff;
     border-radius: 30px;
 }
 .test_block_top_content{
@@ -768,7 +770,7 @@
     color: #000000;
 }
 .test_block_top_text_color{
-    color: #791221;
+    color: #ffffff;
 }
 .test_block_text{
     font-family: Open Sans;
