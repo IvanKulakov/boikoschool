@@ -99,26 +99,26 @@ catch (e)
 //modal block end
 
 //teachers_block start
-try{
-    const teachersBlock = document.getElementById('teachers_block')
-    const unitLeftBtn = document.getElementById('units_nav_left');
-    const unitRightBtn = document.getElementById('units_nav_right');
-    const teacherBox = document.getElementById('teacher_box1');
-
-    const scrollRight = () => {
-        teachersBlock.scrollBy((teacherBox.offsetWidth + 20), 0);
-    }
-    const scrollLeft = () => {
-        teachersBlock.scrollBy(-(teacherBox.offsetWidth + 20), 0);
-    }
-
-    unitRightBtn.addEventListener('click', scrollRight);
-    unitLeftBtn.addEventListener('click', scrollLeft);
-}
-catch (e)
-{
-    console.log(e)
-}
+// try{
+//     const teachersBlock = document.getElementById('teachers_block')
+//     const unitLeftBtn = document.getElementById('units_nav_left');
+//     const unitRightBtn = document.getElementById('units_nav_right');
+//     const teacherBox = document.getElementById('teacher_box1');
+//
+//     const scrollRight = () => {
+//         teachersBlock.scrollBy((teacherBox.offsetWidth + 20), 0);
+//     }
+//     const scrollLeft = () => {
+//         teachersBlock.scrollBy(-(teacherBox.offsetWidth + 20), 0);
+//     }
+//
+//     unitRightBtn.addEventListener('click', scrollRight);
+//     unitLeftBtn.addEventListener('click', scrollLeft);
+// }
+// catch (e)
+// {
+//     console.log(e)
+// }
 //teachers_block end
 
 //lesson_type start
