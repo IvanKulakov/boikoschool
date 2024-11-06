@@ -149,7 +149,6 @@
     cursor: pointer;
 }
 .svg_top{
-
 }
 
 .about{
@@ -393,7 +392,7 @@
     width: 100%;
     background-color: #791221;
     border-radius: 30px;
-    padding: 26px 20px 50px 20px;
+    padding: 26px 10px 38px 10px;
     box-sizing: border-box;
 }
 .lesson_type_mob_title{
@@ -415,6 +414,7 @@
     margin-bottom: 20px;
 }
 .lessons_price_mob{
+    box-sizing: border-box;
     width: fit-content;
     border-radius: 30px;
     border: 1px solid #FFFFFF;
@@ -423,26 +423,39 @@
     margin-bottom: 10px;
 }
 .lessons_price_title_mob{
-    padding: 10px 16px;
+    box-sizing: border-box;
+    padding: 10px 10px;
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
     color: #ffffff;
 }
 .lesson_block_coast_mob{
+    box-sizing: border-box;
     border-radius: 30px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .lesson_coast_mob{
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
-    padding: 10px 16px;
+    padding: 10px 10px;
     color: #000000;
+    box-sizing: border-box;
+}
+.lesson_coast_line_mob{
+    box-sizing: border-box;
+    width: 1px;
+    height: 14px;
+    background-color: #000000;
 }
 .lesson_type_img_mob{
     margin-top: 22px;
@@ -452,7 +465,7 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 30px;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
 }
 .lesson_img_mob{
@@ -475,7 +488,7 @@
     background-size: cover;
 }
 .lesson_type_btn_block_mob{
-    margin-top: 48px;
+    margin-top: 38px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -942,28 +955,29 @@
     justify-content: space-between;
     align-items: center;
 }
-.footer_bottom{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer_bottom_fullStack{
-    display: flex;
-    flex-direction: row;
-    max-width: 30%;
 
-}
+
 .footer_bottom_fullStack_mr{
     margin-right: 5px;
 }
 .footer_bottom_content_cookies{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_bottom_content_cookies_mr{
+    margin-right: 20px;
+}
+.top_messengers_footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 30%;
 }
 
+.footer_bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .footer_bottom_content{
     font-family: Open Sans;
     font-size: 16px;
@@ -998,7 +1012,6 @@
 .contact_top_block_button{
     background-color: #FFFFFF;
     color:#791221;
-;
 }
 
 .invisible{
@@ -1197,7 +1210,6 @@
     .future_free_lesson_title{
         font-size: 20px;
         line-height: 25px;
-
     }
     .future_free_lesson{
         margin-top: 12px;
@@ -1291,7 +1303,28 @@
     .top_messengers_footer{
         display: none;
     }
-
+    .footer_bottom_content_cookies{
+        display: none;
+    }
+    .footer_bottom_fullStack{
+        display: none;
+    }
+    .footer_bottom{
+        justify-content: center;
+    }
+    .footer_bottom_fullStack_mob{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_bottom_content_mob{
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #ffffff;
+    }
     .contact_input_block{
         flex-direction: column;
     }
@@ -1585,10 +1618,16 @@
     .footer_msgs{
         display: none;
     }
-    .top_messengers_footer{
+    .footer_bottom_fullStack{
         display: flex;
         flex-direction: row;
+
+    }
+    .footer_bottom{
         justify-content: space-between;
+    }
+    .mob_only{
+        display: none;
     }
 
 }
@@ -1688,6 +1727,9 @@
     }
     .lesson_type_box_white{
         width: 46%;
+    }
+    .footer_bottom_content_cookies{
+        display: flex;
     }
 
 }
