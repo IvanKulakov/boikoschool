@@ -232,38 +232,49 @@
     color: #ffffff;
     margin-bottom: 32px;
 }
-.lessons_price{
-    width: fit-content;
-    border-radius: 30px;
-    border: 1px solid #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
+.lesson_block_coast_line{
+    height: 100%;
+    box-sizing: border-box;
+    width: 1px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #000000;
 }
-.lessons_price_title{
-    padding: 10px 16px;
+.lesson_block_coast_line_white{
+    height: 100%;
+    box-sizing: border-box;
+    width: 1px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #FFFFFF;
+}
+.lesson_coast{
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #000000;
+}
+.lesson_coast_white{
+    font-family: Open Sans;
+    font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
     color: #ffffff;
 }
-.lesson_block_coast{
-    border-radius: 30px;
-    background-color: #ffffff;
-}
-.lesson_coast{
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    padding: 10px 16px;
-    color: #000000;
-}
 .lesson_type_img{
+    max-width: 35%;
     background-color: #791221;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+.lesson_type_img_white{
+    max-width: 35%;
+    background-color: #F3F3F3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,12 +282,13 @@
 }
 .lesson_type_box_white{
     padding: 24px 16px;
-    width: 46%;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    width: 46%;
     background-color: #F3F3F3;
-    border-radius: 30px;
 }
 .lesson_type_box_title_white{
     font-family: Open Sans;
@@ -297,6 +309,14 @@
     color: #000000;
     margin-bottom: 32px;
 }
+.lessons_price{
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
 .lessons_price_white{
     width: fit-content;
     border-radius: 30px;
@@ -305,35 +325,42 @@
     flex-direction: row;
     margin-bottom: 10px;
 }
-.lessons_price_title_white{
-    padding: 10px 16px;
+.lessons_price_title{
+    padding: 10px 12px;
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+}
+.lessons_price_title_white{
+    padding: 10px 12px;
+    font-family: Open Sans;
+    font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
     color: #000000;
 }
+.lesson_block_coast{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #ffffff;
+
+}
 .lesson_block_coast_white{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border-radius: 30px;
     background-color: #791221;
 }
-.lesson_coast_white{
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    padding: 10px 16px;
-    color: #ffffff;
-}
-.lesson_type_img_white{
-    background-color: #F3F3F3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 30px;
-}
+
 .lesson_type_btns{
     margin-top: 12px;
     display: flex;
@@ -916,14 +943,32 @@
     align-items: center;
 }
 .footer_bottom{
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+.footer_bottom_fullStack{
+    display: flex;
+    flex-direction: row;
+    max-width: 30%;
+
+}
+.footer_bottom_fullStack_mr{
+    margin-right: 5px;
+}
+.footer_bottom_content_cookies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
 .footer_bottom_content{
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center;
     color: #ffffff;
 }
 .contact_input_background{
@@ -1257,9 +1302,6 @@
         width: 100%;
         padding-right: 0;
         margin-bottom: 24px;
-    }
-    .footer_bottom_content_cookies{
-        display: none;
     }
 
 }
@@ -1647,15 +1689,7 @@
     .lesson_type_box_white{
         width: 46%;
     }
-    .footer_bottom_content_cookies{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 30%;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+
 }
 @media (min-width: 1440px) {
     .wrapper {
