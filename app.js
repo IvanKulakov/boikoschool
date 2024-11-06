@@ -122,60 +122,60 @@ catch (e)
 //teachers_block end
 
 //lesson_type start
-try{
-    const lessonType = document.getElementsByClassName('lesson_type_block');
-    const btnLeftLesson = document.getElementById('lesson_type_btn_left');
-    const btnRightLesson = document.getElementById('lesson_type_btn_right');
-
-    const idToElem = () => {
-        for (let i=0; i < lessonType.length; i++){
-            lessonType[i].id = `lessonType`+i;
-            lessonType[i].classList.add('invisible');
-            lessonType[0].classList.remove('invisible');
-        }
-    }
-    idToElem();
-
-    const isActive = () => {
-        for(let i = 0; i < lessonType.length; i++){
-            if(!lessonType[i].classList.contains('invisible')){
-                return Number(lessonType[i].id.slice(-1))
-            }
-        }
-    }
-    const stepLeft = () => {
-        if(+isActive() === 0){
-            return false
-        }
-        else {
-            let next = +isActive() - 1;
-            for (let i = 0; i < lessonType.length; i++){
-                lessonType[i].classList.add('invisible');
-                lessonType[next].classList.remove('invisible');
-            }
-        }
-    }
-    const stepRight = () =>{
-        let next = +isActive() + 1;
-        if(next === lessonType.length){
-            return false
-        }
-        else {
-            for (let i = 0; i < lessonType.length; i++){
-                lessonType[i].classList.add('invisible');
-                lessonType[next].classList.remove('invisible');
-            }
-        }
-    }
-
-
-    btnLeftLesson.addEventListener('click', stepLeft);
-    btnRightLesson.addEventListener('click', stepRight)
-}
-catch (e)
-{
-    console.log(e)
-}
+// try{
+//     const lessonType = document.getElementsByClassName('lesson_type_block');
+//     const btnLeftLesson = document.getElementById('lesson_type_btn_left');
+//     const btnRightLesson = document.getElementById('lesson_type_btn_right');
+//
+//     const idToElem = () => {
+//         for (let i=0; i < lessonType.length; i++){
+//             lessonType[i].id = `lessonType`+i;
+//             lessonType[i].classList.add('invisible');
+//             lessonType[0].classList.remove('invisible');
+//         }
+//     }
+//     idToElem();
+//
+//     const isActive = () => {
+//         for(let i = 0; i < lessonType.length; i++){
+//             if(!lessonType[i].classList.contains('invisible')){
+//                 return Number(lessonType[i].id.slice(-1))
+//             }
+//         }
+//     }
+//     const stepLeft = () => {
+//         if(+isActive() === 0){
+//             return false
+//         }
+//         else {
+//             let next = +isActive() - 1;
+//             for (let i = 0; i < lessonType.length; i++){
+//                 lessonType[i].classList.add('invisible');
+//                 lessonType[next].classList.remove('invisible');
+//             }
+//         }
+//     }
+//     const stepRight = () =>{
+//         let next = +isActive() + 1;
+//         if(next === lessonType.length){
+//             return false
+//         }
+//         else {
+//             for (let i = 0; i < lessonType.length; i++){
+//                 lessonType[i].classList.add('invisible');
+//                 lessonType[next].classList.remove('invisible');
+//             }
+//         }
+//     }
+//
+//
+//     btnLeftLesson.addEventListener('click', stepLeft);
+//     btnRightLesson.addEventListener('click', stepRight)
+// }
+// catch (e)
+// {
+//     console.log(e)
+// }
 //lesson_type end
 
 //burger menu block start

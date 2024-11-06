@@ -235,21 +235,21 @@
     height: 100%;
     box-sizing: border-box;
     width: 1px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
     background: #000000;
 }
 .lesson_block_coast_line_white{
     height: 100%;
     box-sizing: border-box;
     width: 1px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
     background: #FFFFFF;
 }
 .lesson_coast{
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
@@ -257,7 +257,7 @@
 }
 .lesson_coast_white{
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
@@ -325,7 +325,7 @@
     margin-bottom: 10px;
 }
 .lessons_price_title{
-    padding: 10px 12px;
+    padding: 10px 10px;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
@@ -334,7 +334,7 @@
     color: #ffffff;
 }
 .lessons_price_title_white{
-    padding: 10px 12px;
+    padding: 10px 10px;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
@@ -434,7 +434,7 @@
 }
 .lesson_block_coast_mob{
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: 28px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -833,6 +833,7 @@
 }
 .test_block_top_text{
     font-family: Open Sans;
+    margin-left: 14px;
     font-weight: 600;
     text-align: left;
     color: #000000;
@@ -1420,6 +1421,7 @@
 }
 @media (min-width: 768px) {
     .top_messengers{
+        display: flex;
         width: 30%;
         justify-content: space-between;
     }
